@@ -10,6 +10,10 @@ defmodule Cipher.Mixfile do
      deps: deps()]
   end
 
+  def application do
+    [applications: [:poison, :plug]] 
+  end
+
   defp package do
     [maintainers: ["Rubén Caro"],
      licenses: ["MIT"],
